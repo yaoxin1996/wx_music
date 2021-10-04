@@ -1,0 +1,93 @@
+/* pages/index/index.wxss */
+.swiper_item {
+  width: 100%;
+  height: 300rpx;
+}
+.swiper_item .img {
+  width: 100%;
+}
+.inner {
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+}
+.inner .icon_list {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.inner .icon_list .icon {
+  /* flex: 1; */
+}
+.inner .icon_list .icon .iconfont {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #d43c33;
+  display: inline-block;
+  color: #fff;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  margin: 20rpx 0;
+}
+.inner .icon_list .icon .label {
+  font-size: 26rpx;
+}
+.inner .scroll {
+  display: flex;
+  height: 280rpx;
+}
+.inner .scroll .scrollItem {
+  width: 200rpx;
+  margin-right: 20rpx;
+}
+.inner .scroll .scrollItem .scroll_img {
+  width: 200rpx;
+}
+.inner .scroll .scrollItem .desc {
+  font-size: 26rpx;
+  /* 单行文本 溢出隐藏 */
+  /* white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; */
+  /* 多行文本 溢出隐藏 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* 对齐模式 */
+  -webkit-line-clamp: 2;
+  /* 设置多行的行数 */
+}
+.inner .ranklist .swiper {
+  height: 400rpx;
+}
+.inner .ranklist .swiper .title {
+  font-size: 30rpx;
+}
+.inner .ranklist .swiper .rank {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  width: 96%;
+  background-color: #fbfbfb;
+}
+.inner .ranklist .swiper .rank .rank_item {
+  display: flex;
+  align-items: center;
+}
+.inner .ranklist .swiper .rank .rank_item image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 6rpx;
+}
+.inner .ranklist .swiper .rank .rank_item .code {
+  width: 100rpx;
+  text-align: center;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.inner .ranklist .swiper .rank .rank_item .name {
+  max-width: 350rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

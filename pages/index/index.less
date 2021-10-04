@@ -1,0 +1,95 @@
+/* pages/index/index.wxss */
+.swiper_item {
+  width: 100%;
+  height: 300rpx;
+  .img {
+    width: 100%;
+  }
+}
+.inner {
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+  .icon_list {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    // padding: 0 30rpx;
+    .icon {
+      /* flex: 1; */
+      .iconfont {
+        width: 100rpx;
+        height: 100rpx;
+        border-radius: 50%;
+        background-color: #d43c33;
+        display: inline-block;
+        color: #fff;
+        line-height: 100rpx;
+        font-size: 50rpx;
+        margin: 20rpx 0;
+      }
+      .label {
+        font-size: 26rpx;
+      }
+    }
+  }
+    
+  .scroll {
+    display: flex;
+    height: 280rpx;
+    .scrollItem {
+      width: 200rpx;
+      margin-right: 20rpx;
+      .scroll_img {
+        width: 200rpx;
+      }
+      .desc {
+        font-size: 26rpx;
+        /* 单行文本 溢出隐藏 */
+        /* white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; */
+        /* 多行文本 溢出隐藏 */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical; /* 对齐模式 */
+        -webkit-line-clamp: 2; /* 设置多行的行数 */
+      }
+    }
+  }
+  .ranklist {
+    .swiper {
+      height: 400rpx;
+      .title {
+        font-size: 30rpx;
+      }
+      .rank {
+        margin-top: 20rpx;
+        margin-bottom: 20rpx;
+        width: 96%;
+        background-color: #fbfbfb;
+        .rank_item {
+          display: flex;
+          align-items: center;
+          image {
+            width: 100rpx;
+            height: 100rpx;
+            border-radius: 6rpx;
+          }
+          .code {
+            width: 100rpx;
+            text-align: center;
+            font-size: 30rpx;
+            font-weight: bold;
+          }
+          .name {
+            max-width: 350rpx;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+<!--pages/index/index.wxml-->
+<!-- 轮播图 -->
+<swiper indicator-dots	indicator-color="#fff" indicator-active-color="#d43c33" autoplay circular interval="3000">
+  <block wx:for="{{bannerList}}" wx:key="index">
+    <swiper-item class="swiper_item">
+      <image class="img" mode="widthFix" src="{{item.pic}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="inner">
+  <!-- 五个图标导航区域 -->
+  <view class="icon_list">
+    <view class="icon" bindtap="gotoRecommend">
+      <view class="iconfont icon-meirituijian-"></view>
+      <view class="label">每日推荐</view>
+    </view>
+    <view class="icon">
+      <view class="iconfont icon-gedan"></view>
+      <view class="label">歌单</view>
+    </view>
+    <view class="icon">
+      <view class="iconfont icon-paihangbang"></view>
+      <view class="label">排行榜</view>
+    </view>
+    <view class="icon">
+      <view class="iconfont icon-diantai"></view>
+      <view class="label">电台</view>
+    </view>
+    <view class="icon">
+      <view class="iconfont icon-zhibobofangshexiangjiguankanxianxing"></view>
+      <view class="label">直播</view>
+    </view>
+  </view>
+  <!-- 推荐歌曲区域 -->
+  <NavHeader title="推荐歌曲" nav="为你精心推荐"></NavHeader>
+  <!-- 推荐歌曲内容 -->
+  <scroll-view class="scroll" enable-flex scroll-x>
+    <block wx:for="{{recommendList}}" wx:key="id">
+      <view class="scrollItem">
+        <image mode="widthFix" class="scroll_img" src="{{item.picUrl}}"></image>
+        <view class="desc">{{item.name}}</view>
+      </view>
+    </block>
+  </scroll-view>
+  <!-- 排行榜 -->
+  <NavHeader title="排行榜" nav="热歌风向标"></NavHeader>
+  <!-- 排行榜内容 -->
+  <view class="ranklist">
+    <swiper class="swiper" next-margin="50rpx">
+      <swiper-item wx:for="{{topList}}" wx:key="id">
+        <view class="title">{{item.name}} ></view>
+        <view class="rank" wx:for="{{item.track}}" wx:key="id" wx:for-item="val" wx:for-index="idx">
+          <view class="rank_item">
+            <image mode="widthFix" src="{{val.al.picUrl}}"></image>
+            <view class="code">{{idx + 1}}</view>
+            <view class="name">{{val.name}}</view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

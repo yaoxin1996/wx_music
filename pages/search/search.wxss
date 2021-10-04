@@ -1,0 +1,120 @@
+/* pages/search/search.wxss */
+.searchContainer {
+    padding: 20rpx 30rpx;
+}
+.header {
+    /* padding: 20rpx 30rpx; */
+    display: flex;
+    height: 60rpx;
+    line-height: 60rpx;
+    
+}
+.searchInput {
+    flex: 1;
+    position: relative;
+    border-radius: 30rpx;
+    background: rgba(237, 237, 237, .3);
+}
+.searchIcon {
+    position: absolute;
+    left: 10rpx;
+}
+.searchInput input {
+    margin-left: 50rpx;
+    height: 60rpx;
+}
+.placeholder {
+    /* color: #d43c33; */
+    font-size: 28rpx;
+}
+.cancel {
+    width: 100rpx;
+    text-align: center;
+}
+.clear {
+    position: absolute;
+    top: 0;
+    right: 30rpx;
+    font-size: 30rpx;
+    z-index: 999;
+}
+.hot {
+    
+}
+.title {
+    font-size: 28rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #eee;
+}
+.hotList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hotItem {
+    width: 50%;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 26rpx;
+}
+.order {
+    margin: 0 10rpx;
+}
+.iconImg {
+    width: 35rpx;
+    height: 20rpx;
+    margin-left: 10rpx;
+}
+.showSearchContent {
+}
+.searchContent {
+    color: #d43c33;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 24rpx;
+    border-bottom: 1rpx solid #d43c33;
+
+}
+.searchItem {
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+}
+.content {
+    flex: 1;
+    margin-left: 20rpx;
+    border-bottom: 1rpx solid #eee;
+    font-size: 26rpx;
+}
+.history {
+    position: relative;
+    margin: 20rpx 0rpx;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.history .his_title {
+    font-size: 28rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+}
+.history .historyItem {
+    font-size: 26rpx;
+    border-radius: 20rpx;
+    background-color: #ededed;
+    padding: 0 30rpx;
+    margin-left : 20rpx;
+    margin-bottom: 10rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+}
+.history .iconfont {
+    height: 50rpx;
+    line-height: 50rpx;
+    margin-left: 20rpx;
+}
+.delete {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

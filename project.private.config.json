@@ -1,0 +1,30 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "个人中心",
+                    "pathName": "pages/personal/personal",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "歌曲播放页面",
+                    "pathName": "pages/songDetail/songDetail",
+                    "query": "Id=453413861",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}
